@@ -1,7 +1,11 @@
+import Hero from "@/views/Hero";
+
 export default function Home() {
   return (
     <main className="">
-      <div className="h-screen w-full bg-white" />
+      <section>
+        <Hero />
+      </section>
       <div className="h-screen w-full bg-slate-500" />
       <div className="h-screen w-full bg-purple-700" />
     </main>

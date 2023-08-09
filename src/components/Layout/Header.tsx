@@ -9,8 +9,7 @@ const Header: FC = () => {
   const { scroll } = useScroll();
 
   const hideNavbar = useMemo(
-    () =>
-      parseInt(scroll.value.toFixed()) >= window.innerHeight && scroll.dir > 0,
+    () => parseInt(scroll.value.toFixed()) >= 500 && scroll.dir > 0,
     [scroll]
   );
 
@@ -23,12 +22,12 @@ const Header: FC = () => {
           ease: "easeOut",
         },
       }}
-      className="fixed top-0 left-0 w-full px-6 py-3 flex items-center justify-between"
+      className="fixed top-0 left-0 w-full px-6 py-3 flex items-center justify-between z-top"
     >
       <div className="">
         <span className="">logo</span>
       </div>
-      <div className="px-4 py-2 rounded-3xl glass">
+      <div className="px-6 py-2 rounded-lg glass">
         <span className="text-black">
           header {scroll.value.toFixed()}, {scroll.dir},{" "}
           {scroll.velo.toFixed(0)}
