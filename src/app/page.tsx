@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <main className="h-[200vh]">
-      <div className="h-screen w-full bg-stone-800" />
-      <div className="h-screen w-full bg-blue-500" />
+    <main className="">
+      <div className="h-screen w-full bg-white" />
+      <div className="h-screen w-full bg-slate-500" />
       <div className="h-screen w-full bg-purple-700" />
     </main>
   );

@@ -1,0 +1,4 @@
+.glass {
+  background-clip: padding-box;
+  @apply backdrop-filter backdrop-blur-md bg-opacity-10 bg-white;
+}
